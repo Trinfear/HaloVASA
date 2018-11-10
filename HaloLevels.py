@@ -5,8 +5,21 @@
 import numpy
 levels = []
 length = len(levels)
+
 difficulties = {'Legendary': 4, 'Heroic': 2, 'Normal': 1, 'Easy': 0.25}
 
+skulls = ["Iron", "Black Eye", "Tough Luck", "Catch", "Cloud", "Famine", "Thunderstorm", "Tilt", "Mythic", "Blind", "Cowbell", "Grunt Birthday", "IWHBYD"]
+class Skull:
+    def __init__(self, name="", mult=1.0, secondary=False):
+        self.name = name
+        self.mult = mult
+        self.secondary = secondary
+    
+
+def choose(A):
+    x = numpy.random.randint(0, len(A))
+    del A[x]
+    return x
 
 def level_select():
     for i in range(length):
@@ -19,7 +32,9 @@ def level_select():
         select_difficulty()
         print("\n\n")
 
-# Dumb ass merging test
+
+def add_skull(current_diff, diff_cap):
+    return  
 
 
 def fill_levels():
