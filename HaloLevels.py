@@ -8,7 +8,6 @@ length = len(levels)
 
 difficulties = {'Legendary': 4, 'Heroic': 2, 'Normal': 1, 'Easy': 0.25}
 
-
 class Skull:
     def __init__(self, name="", mult=1.0, game="Reach", secondary=False):
         self.name = name
@@ -33,10 +32,11 @@ def generateSkullList():
             ]
     return skulls
 
-def choose(A):
-    x = numpy.random.randint(0, len(A))
-    del A[x]
+def choose(a):
+    x = numpy.random.randint(0, len(a))
+    del a[x]
     return x
+
 
 def level_select():
     for i in range(length):
@@ -70,19 +70,21 @@ def fill_levels():
 
 def select_difficulty():
     # call other functions to get difficulty
-    challanges = []
+    challenges = []
     difficulty = 0
     difficulty_min = 18
     difficulty_max = 25
-    new_challanges, new_diffulty = choose_difficulty()
-    challanges.append(new_challanges)
-    difficulty += new_diffulty
-    new_challanges, new_diffulty = add_skull(difficulty_min, difficulty_max, difficulty)
+    new_challenges, new_difficulty = choose_difficulty()
+    challaeges.append(new_challenges)
+    difficulty += new_difficulty
+    new_challenges, new_difficulty = add_skull(difficulty_min, difficulty_max, difficulty)
+    challaeges.append(new_challenges)
+    difficulty += new_difficulty
     print(challanges, difficulty)
 
 
 def choose_difficulty():
-    diff = numpy.random.choice('Legendary', 'Heroic', 'Normal', 'Easy')
+    diff = numpy.random.choice(['Legendary', 'Heroic', 'Normal', 'Easy'])
     return diff, difficulties[diff]
 
 
