@@ -20,11 +20,16 @@ def level_select():
 
 def fill_levels():
     for i in range(15):
-        levels.append('h2: ' + str(i))
-        levels.append('h5: ' + str(i))
+        levels.append('H2: ' + str(i))
+        levels.append('H5: ' + str(i))
 
     for i in range(10):
-        levels.append(())
+        levels.append('H1: ' + str(i))
+        levels.append('H3: ' + str(i))
+        levels.append('HR: ' + str(i))
+        levels.append('H4: ' + str(i))
+
+    levels.sort()
 
 
 def select_difficulty():
