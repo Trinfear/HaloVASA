@@ -5,15 +5,29 @@
 import numpy
 levels = []
 length = len(levels)
-for i in range(length):
-    x = numpy.random.randint(0, len(levels))
-    print("Time to play " + str(levels[x]))
-    del levels[x]
-    answer = ""
-    while answer != "Y":
-        answer = input("Ready for next level? (Y): ")
-    print("\n\n")
 
-x = 0
-while x < 0:
-    pass
+
+def level_select():
+    for i in range(length):
+        x = numpy.random.randint(0, len(levels))
+        print("Time to play " + str(levels[x]))
+        del levels[x]
+        answer = ""
+        while answer != "Y":
+            answer = input("Ready for next level? (Y): ")
+        print("\n\n")
+
+
+def fill_levels():
+    for i in range(15):
+        levels.append('h2: ' + str(i))
+        levels.append('h5: ' + str(i))
+
+    for i in range(10):
+        levels.append(())
+
+
+def select_difficulty():
+    x = 0
+    while x < 0:
+        pass
