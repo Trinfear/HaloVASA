@@ -8,14 +8,16 @@ length = len(levels)
 
 difficulties = {'Legendary': 4, 'Heroic': 2, 'Normal': 1, 'Easy': 0.25}
 
+
 class Skull:
     def __init__(self, name="", mult=1.0, game="Reach", secondary=False):
         self.name = name
         self.mult = mult
         self.game = game
-        self.secondary = secondary    
+        self.secondary = secondary
 
-def generateSkullList():
+
+def generate_skull_list():
     skulls = [Skull("Iron", 1.0),
               Skull("Black Eye", 1.0),
               Skull("Tough Luck", 1.0),
@@ -31,6 +33,7 @@ def generateSkullList():
               Skull("EDITIWHBYD", 1.0, True),
             ]
     return skulls
+
 
 def choose(a):
     x = numpy.random.randint(0, len(a))
