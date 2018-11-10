@@ -5,7 +5,18 @@
 import numpy
 levels = []
 length = len(levels)
+skulls = ["Iron", "Black Eye", "Tough Luck", "Catch", "Cloud", "Famine", "Thunderstorm", "Tilt", "Mythic", "Blind", "Cowbell", "Grunt Birthday", "IWHBYD"]
+class Skull:
+    def __init__(self, name="", mult=1.0, secondary=False):
+        self.name = name
+        self.mult = mult
+        self.secondary = secondary
+    
 
+def choose(A):
+    x = numpy.random.randint(0, len(A))
+    del A[x]
+    return x
 
 def level_select():
     for i in range(length):
@@ -17,7 +28,10 @@ def level_select():
             answer = input("Ready for next level? (Y): ")
         print("\n\n")
 
-# Dumbass merging test
+
+def add_skull(current_diff, diff_cap):
+    return  
+    
 
 def fill_levels():
     for i in range(15):
