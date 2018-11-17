@@ -1,0 +1,7 @@
+use_level_multiplier = 0
+prompt_difficulty = 1
+default_difficulty = 40
+use_cutscene_levels = 0
+use_lone_wolf = 0
+skullfile = skulls.csv
+levelfile = levels.csv

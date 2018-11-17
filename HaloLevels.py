@@ -2,12 +2,8 @@
 # add a function to pull out a random value and shift the other ones down
 # just make it a list and have it remove a level
 
-import numpy
-levels = []
-length = len(levels)
-
-difficulties = {'Legendary': 4, 'Heroic': 2, 'Normal': 1, 'Easy': 0.25}
-
+import numpy as np
+import pandas as pd
 
 class Skull:
     def __init__(self, name="", mult=1.0, game="Reach", secondary=False):
@@ -36,14 +32,14 @@ def generate_skull_list():
 
 
 def choose(a):
-    x = numpy.random.randint(0, len(a))
+    x = np.random.randint(0, len(a))
     del a[x]
     return x
 
 
 def level_select():
     for i in range(length):
-        x = numpy.random.randint(0, len(levels))
+        x = np.random.randint(0, len(levels))
         print("Time to play " + levels[x])
         del levels[x]
         answer = ""
@@ -57,7 +53,7 @@ def add_skull(current_diff, diff_cap):
     return  
 
 
-def fill_levels():
+def fill_levels(levels):
     for i in range(15):
         levels.append('Halo 2: level ' + str(i))
         levels.append('Halo 5: ' + str(i))
@@ -68,8 +64,6 @@ def fill_levels():
         levels.append('Reach: level ' + str(i))
         levels.append('Halo 4: level ' + str(i))
 
-    levels.sort()
-
 
 def select_difficulty():
     # call other functions to get difficulty
@@ -77,7 +71,7 @@ def select_difficulty():
     difficulty = 0
     difficulty_min = 18
     difficulty_max = 25
-    new_challenges, new_difficulty = choose_difficulty()
+    new_challenges, new_difficulty = choose_halo_difficulty()
     challaeges.append(new_challenges)
     difficulty += new_difficulty
     new_challenges, new_difficulty = add_skull(difficulty_min, difficulty_max, difficulty)
@@ -86,15 +80,30 @@ def select_difficulty():
     print(challanges, difficulty)
 
 
-def choose_difficulty():
-    diff = numpy.random.choice(['Legendary', 'Heroic', 'Normal', 'Easy'])
+def choose_halo_difficulty():
+    diff = np.random.choice(['Legendary', 'Heroic', 'Normal', 'Easy'])
     return diff, difficulties[diff]
 
+# Read all options from file
+opts = {}
+for line in open("options.txt", "r"):
+    line = line.rstrip('\n')
+    line = line.split(' = ')
+    opts[line[0]] = line[1]
+print(opts) # DEBUG
 
-fill_levels()
-level_select()
-skulls = generateSkullList()
+skulls = pd.read_csv(opts['skullfile'], skiprows=0)
+levels = pd.read_csv(opts['levelfile'], skiprows=0)
+print(skulls.head()) # DEBUG
+
+difficulties = {'Legendary': 4, 'Heroic': 2, 'Normal': 1, 'Easy': 0.25}
+
+
+#print(levels)
+#level_select()
+'''
 print(skulls[0].name)
 print(skulls[0].mult)
 print(skulls[0].secondary)
 print(skulls[0].game)
+'''
