@@ -1,3 +1,28 @@
-ï»¿Name,Multiplier,Secondary,1,2,3,Reach,4,5
-Iron,1,0,1,1,1,1,1,1
-Black Eye,1,0,1,1,1,1,1,1
+Name	Multiplier	Secondary	Halo 1	Halo 2	Halo 3	Halo 3 ODST	Reach	Halo 4	Halo 5
+Iron	1	0	1	1	1	1	1	1	1
+Mythic	1	0	1	1	1	1	1	1	1
+Boom	1	0	1	0	0	0	0	0	0
+Foreign	1	0	1	0	0	0	0	0	0
+Famine	1	0	1	1	1	1	1	1	1
+Bandanna	1	0	1	0	0	0	0	0	0
+Fog/Cloud	1	0	1	0	1	0	1	1	1
+Malfunction	1	0	1	0	0	0	0	0	0
+Recession	1	0	1	0	0	0	0	0	0
+Black Eye	1	0	1	1	1	1	1	1	1
+Eye Patch	1	0	1	0	0	0	0	0	0
+Pinata	1	0	1	0	0	0	0	0	0
+Grunt Birthday Party	1	0	1	1	1	1	1	1	1
+Grunt Funeral	1	0	1	0	0	0	0	0	0
+Anger	1	0	0	1	0	0	0	0	0
+Assassins	1	0	0	1	0	0	0	0	0
+Blind	1	1	0	1	1	1	1	1	1
+Catch	1	0	0	1	1	1	1	1	1
+Envy	1	0	0	1	0	0	0	0	0
+Ghost	1	0	0	1	0	0	0	0	0
+IWHBYD	1	0	0	1	1	1	1	1	1
+Sputnik	1	0	0	1	0	0	0	0	0
+That's Just… Wrong	1	0	0	1	0	0	0	0	0
+Thunderstorm	1	0	0	1	1	1	1	1	1
+Tough Luck	1	0	0	0	1	1	1	1	1
+Cowbell	0	1	0	0	1	1	1	1	1
+Tilt	0	0	0	0	1	1	1	1	1

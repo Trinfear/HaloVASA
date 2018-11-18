@@ -4,14 +4,15 @@
 # Difficulty mods
 use_level_multiplier = 0
 prompt_difficulty = 0
-default_difficulty = 40
+default_difficulty = 80
+valid_halo_difficulties = Heroic, Legendary
 
 # Level mods
 # Enter "Any" for valid_games to use all games
-# At the moment valid games are Halo 1, Halo 2, Halo 3, Halo 3 ODST, Reach, Halo 4, Halo 5
+# At the moment valid game strings are Halo 1, Halo 2, Halo 3, Halo 3 ODST, Reach, Halo 4, Halo 5
 valid_games = Reach
 use_cutscene_levels = 0
-level blacklist = Lone Wolf
+level_blacklist = Lone Wolf
 
 # Skull mods
 use_secondary_skulls = 0

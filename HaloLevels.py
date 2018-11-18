@@ -103,10 +103,10 @@ for v in opts: print(v, "\t"*(3-int(len(v)/8)), '=',  opts[v]) # DEBUG
 skulls = pd.read_csv(opts['skullfile'], skiprows=0)
 levels = pd.read_csv(opts['levelfile'], skiprows=0)
 # Hardcoded halo difficulty multiplier dictionary
-difficulties = {'Legendary': 4, 'Heroic': 2, 'Normal': 1, 'Easy': 0.25}
+halo_diff_dict = {'Legendary': 4, 'Heroic': 2, 'Normal': 1, 'Easy': 0.25}
 print(skulls.head()) # DEBUG
 
-# Base difficulty
+# Set base difficulty
 diff = opts['default_difficulty']
 if(opts['prompt_difficulty']):
     diff = int(input("Enter a difficulty value: "))
@@ -121,24 +121,33 @@ possible_levels = levels.loc[
                                 (levels['Cutscene Level'] == 0) & 
                                 (levels['Game'].isin(possible_games))
                             ]
-print(possible_levels) # DEBUG
+
+# Choose halo difficulty
+valid_halo_diffs = opts['valid_halo_difficulties'].split(', ')
+chosen_halo_diff = np.random.choice(valid_halo_diffs)
+
+print(possible_levels, '\n') # DEBUG
 level = possible_levels.sample(1)
-print(level) # DEBUG
+print(level, '\n') # DEBUG
 
 # Get possible skulls/modifiers for selected level
-# TODO - figure this shit out
-'''
+# Skulls
+chosen_game = level['Game'].to_string(index=False)
 possible_skulls = skulls.loc[ 
-                                (skulls['Cutscene Level'] == 0) & 
-                                (skulls['Game'].isin(possible_games))
-                            ] 
-'''
+                                (skulls[chosen_game] == 1)
+                            ]
+print(possible_skulls, '\n') # DEBUG
+                            
+
 
 # Modify multiplier until we done
 current_diff = 10
 # Use spreadsheet difficulty instead of default if option set
 if(opts['use_level_multiplier']):
     current_diff = int(level['Multiplier'])
+# Apply halo difficulty multiplier
+current_diff *= halo_diff_dict[chosen_halo_diff]
+
 while(current_diff < diff):
     # add diff
     print(current_diff) # DEBUG
