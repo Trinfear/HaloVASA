@@ -1,82 +1,82 @@
-Name	Multiplier	Game	Cutscene Level
-Pillar of Autumn	1	Halo 1	0
-Halo	1	Halo 1	0
-The Truth and Reconciliation	1	Halo 1	0
-The Silent Cartographer	1	Halo 1	0
-Assault on the Control Room	1	Halo 1	0
-343 Guilty Spark	1	Halo 1	0
-The Library	1	Halo 1	0
-Two Betrayals	1	Halo 1	0
-Keyes	1	Halo 1	0
-The Maw	1	Halo 1	0
-The Heretic	1	Halo 2	1
-The Armory	1	Halo 2	0
-Cairo Station	1	Halo 2	0
-Outskirts	1	Halo 2	0
-Metropolis	1	Halo 2	0
-The Arbiter	1	Halo 2	0
-The Oracle	1	Halo 2	0
-Delta Halo	1	Halo 2	0
-Regret	1	Halo 2	0
-Sacred Icon	1	Halo 2	0
-Quarantine Zone	1	Halo 2	0
-Gravemind	1	Halo 2	0
-Uprising	1	Halo 2	0
-High Charity	1	Halo 2	0
-The Great Journey	1	Halo 2	0
-Arrival	1	Halo 3	1
-Sierra 117	1	Halo 3	0
-Crow's Nest	1	Halo 3	0
-Tsavo Highway	1	Halo 3	0
-The Storm	1	Halo 3	0
-Floodgate	1	Halo 3	0
-The Ark	1	Halo 3	0
-The Covenant	1	Halo 3	0
-Cortana	1	Halo 3	0
-Halo	1	Halo 3	0
-Prepare To Drop	1	Halo 3 ODST	1
-Mombasa Streets	1	Halo 3 ODST	0
-Tayari Plaza	1	Halo 3 ODST	0
-Uplift Reserve	1	Halo 3 ODST	0
-Kizingo Boulevard	1	Halo 3 ODST	0
-ONI Alpha Site	1	Halo 3 ODST	0
-NMPD HQ	1	Halo 3 ODST	0
-Kikowani Station	1	Halo 3 ODST	0
-Data Hive	1	Halo 3 ODST	0
-Coastal Highway	1	Halo 3 ODST	0
-Noble Actual	1	Reach	1
-Winter Contingency	1	Reach	0
-Oni: Sword Base	1	Reach	0
-Nightfall	1	Reach	0
-Tip of the Spear	1	Reach	0
-Long Night of Solace	1	Reach	0
-Exodus	1	Reach	0
-New Alexandria	1	Reach	0
-The Package	1	Reach	0
-The Pillar of Autumn	1	Reach	0
-Lone Wolf	1	Reach	0
-Prologue	1	Halo 4	1
-Dawn	1	Halo 4	0
-Requiem	1	Halo 4	0
-Forerunner	1	Halo 4	0
-Infinity	1	Halo 4	0
-Reclaimer	1	Halo 4	0
-Shutdown	1	Halo 4	0
-Composer	1	Halo 4	0
-Midnight	1	Halo 4	0
-Epilogue	1	Halo 4	1
-Osiris	1	Halo 5	0
-Blue Team	1	Halo 5	0
-Glassed	1	Halo 5	0
-Meridian Station	1	Halo 5	1
-Unconfirmed	1	Halo 5	0
-Evacuation	1	Halo 5	0
-Reunion	1	Halo 5	0
-Swords of Sanghelios	1	Halo 5	0
-Alliance	1	Halo 5	0
-Enemy Lines	1	Halo 5	0
-Before the Storm	1	Halo 5	0
-Battle of Sunaion	1	Halo 5	0
-Genesis	1	Halo 5	0
-The Breaking	1	Halo 5	0
-Guardians	1	Halo 5	0
+﻿Name,Multiplier,Game,Cutscene Level
+Pillar of Autumn,1,Halo 1,0
+Halo,1,Halo 1,0
+The Truth and Reconciliation,1,Halo 1,0
+The Silent Cartographer,1,Halo 1,0
+Assault on the Control Room,1,Halo 1,0
+343 Guilty Spark,1,Halo 1,0
+The Library,1,Halo 1,0
+Two Betrayals,1,Halo 1,0
+Keyes,1,Halo 1,0
+The Maw,1,Halo 1,0
+The Heretic,1,Halo 2,1
+The Armory,1,Halo 2,0
+Cairo Station,1,Halo 2,0
+Outskirts,1,Halo 2,0
+Metropolis,1,Halo 2,0
+The Arbiter,1,Halo 2,0
+The Oracle,1,Halo 2,0
+Delta Halo,1,Halo 2,0
+Regret,1,Halo 2,0
+Sacred Icon,1,Halo 2,0
+Quarantine Zone,1,Halo 2,0
+Gravemind,1,Halo 2,0
+Uprising,1,Halo 2,0
+High Charity,1,Halo 2,0
+The Great Journey,1,Halo 2,0
+Arrival,1,Halo 3,1
+Sierra 117,1,Halo 3,0
+Crow's Nest,1,Halo 3,0
+Tsavo Highway,1,Halo 3,0
+The Storm,1,Halo 3,0
+Floodgate,1,Halo 3,0
+The Ark,1,Halo 3,0
+The Covenant,1,Halo 3,0
+Cortana,1,Halo 3,0
+Halo,1,Halo 3,0
+Prepare To Drop,1,Halo 3 ODST,1
+Mombasa Streets,1,Halo 3 ODST,0
+Tayari Plaza,1,Halo 3 ODST,0
+Uplift Reserve,1,Halo 3 ODST,0
+Kizingo Boulevard,1,Halo 3 ODST,0
+ONI Alpha Site,1,Halo 3 ODST,0
+NMPD HQ,1,Halo 3 ODST,0
+Kikowani Station,1,Halo 3 ODST,0
+Data Hive,1,Halo 3 ODST,0
+Coastal Highway,1,Halo 3 ODST,0
+Noble Actual,1,Reach,1
+Winter Contingency,1,Reach,0
+Oni: Sword Base,1,Reach,0
+Nightfall,1,Reach,0
+Tip of the Spear,1,Reach,0
+Long Night of Solace,1,Reach,0
+Exodus,1,Reach,0
+New Alexandria,1,Reach,0
+The Package,1,Reach,0
+The Pillar of Autumn,1,Reach,0
+Lone Wolf,1,Reach,0
+Prologue,1,Halo 4,1
+Dawn,1,Halo 4,0
+Requiem,1,Halo 4,0
+Forerunner,1,Halo 4,0
+Infinity,1,Halo 4,0
+Reclaimer,1,Halo 4,0
+Shutdown,1,Halo 4,0
+Composer,1,Halo 4,0
+Midnight,1,Halo 4,0
+Epilogue,1,Halo 4,1
+Osiris,1,Halo 5,0
+Blue Team,1,Halo 5,0
+Glassed,1,Halo 5,0
+Meridian Station,1,Halo 5,1
+Unconfirmed,1,Halo 5,0
+Evacuation,1,Halo 5,0
+Reunion,1,Halo 5,0
+Swords of Sanghelios,1,Halo 5,0
+Alliance,1,Halo 5,0
+Enemy Lines,1,Halo 5,0
+Before the Storm,1,Halo 5,0
+Battle of Sunaion,1,Halo 5,0
+Genesis,1,Halo 5,0
+The Breaking,1,Halo 5,0
+Guardians,1,Halo 5,0

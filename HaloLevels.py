@@ -97,14 +97,14 @@ for line in open("options.txt", "r"):
     if(line[1].isnumeric()):
         line[1] = int(line[1])
     opts[line[0]] = line[1]
-for v in opts: print(v, "\t"*(3-int(len(v)/8)), '=',  opts[v]) # DEBUG
+#for v in opts: print(v, "\t"*(3-int(len(v)/8)), '=',  opts[v]) # DEBUG
 
 # Read skulls and level data
 skulls = pd.read_csv(opts['skullfile'], skiprows=0)
 levels = pd.read_csv(opts['levelfile'], skiprows=0)
 # Hardcoded halo difficulty multiplier dictionary
 halo_diff_dict = {'Legendary': 4, 'Heroic': 2, 'Normal': 1, 'Easy': 0.25}
-print(skulls.head()) # DEBUG
+#print(skulls.head()) # DEBUG
 
 # Set base difficulty
 diff = opts['default_difficulty']
@@ -112,11 +112,12 @@ if(opts['prompt_difficulty']):
     diff = int(input("Enter a difficulty value: "))
 
 # Choose level
-print('\n', levels, '\n') # DEBUG
+#print('\n', levels, '\n') # DEBUG
 # Extract valid halo games from options
 possible_games = opts['valid_games'].split(', ')
 if(possible_games == "Any"):
     possible_games = ['Halo 1', 'Halo 2', 'Halo 3', 'Halo 3 ODST', 'Reach', 'Halo 4', 'Halo 5']
+#print(levels) # DEBUG
 possible_levels = levels.loc[ 
                                 (levels['Cutscene Level'] == 0) & 
                                 (levels['Game'].isin(possible_games))
@@ -126,9 +127,9 @@ possible_levels = levels.loc[
 valid_halo_diffs = opts['valid_halo_difficulties'].split(', ')
 chosen_halo_diff = np.random.choice(valid_halo_diffs)
 
-print(possible_levels, '\n') # DEBUG
+#print(possible_levels, '\n') # DEBUG
 level = possible_levels.sample(1)
-print(level, '\n') # DEBUG
+#print(level, '\n') # DEBUG
 
 # Get possible skulls/modifiers for selected level
 # Skulls
@@ -136,7 +137,7 @@ chosen_game = level['Game'].to_string(index=False)
 possible_skulls = skulls.loc[ 
                                 (skulls[chosen_game] == 1)
                             ]
-print(possible_skulls, '\n') # DEBUG
+#print(possible_skulls, '\n') # DEBUG
                             
 
 
@@ -148,12 +149,25 @@ if(opts['use_level_multiplier']):
 # Apply halo difficulty multiplier
 current_diff *= halo_diff_dict[chosen_halo_diff]
 
+chosen_skulls = []
 while(current_diff < diff):
-    # add diff
-    print(current_diff) # DEBUG
-    current_diff = 1000
-    break
-
+    #print("Current Difficulty:", current_diff) # DEBUG
+    chosen_skulls.append(possible_skulls.sample(1, replace=False))
+    possible_skulls.drop(chosen_skulls[-1].index, inplace=True)
+    #print('\n', chosen_skulls[-1], '\n') # DEBUG
+    mult = float((chosen_skulls[-1]['Multiplier'].to_string(index=False)))
+    current_diff *= mult
+    #print("Current Difficulty:", current_diff) # DEBUG
+    if(len(possible_skulls) == 0):
+        print("Out of skulls!")
+        break
+    
+print('{} ({}) on {}'.format(level['Name'].to_string(index=False), chosen_game, chosen_halo_diff))
+print('SKULLS:')
+for skull in chosen_skulls:
+    print('\t', skull['Name'].to_string(index=False))
+print('\nGoal Difficulty:', diff)
+print('Goal Difficulty:', round(current_diff))
 
 #print(levels)
 #level_select()

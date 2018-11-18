@@ -1,28 +1,28 @@
-Name	Multiplier	Secondary	Halo 1	Halo 2	Halo 3	Halo 3 ODST	Reach	Halo 4	Halo 5
-Iron	1	0	1	1	1	1	1	1	1
-Mythic	1	0	1	1	1	1	1	1	1
-Boom	1	0	1	0	0	0	0	0	0
-Foreign	1	0	1	0	0	0	0	0	0
-Famine	1	0	1	1	1	1	1	1	1
-Bandanna	1	0	1	0	0	0	0	0	0
-Fog/Cloud	1	0	1	0	1	0	1	1	1
-Malfunction	1	0	1	0	0	0	0	0	0
-Recession	1	0	1	0	0	0	0	0	0
-Black Eye	1	0	1	1	1	1	1	1	1
-Eye Patch	1	0	1	0	0	0	0	0	0
-Pinata	1	0	1	0	0	0	0	0	0
-Grunt Birthday Party	1	0	1	1	1	1	1	1	1
-Grunt Funeral	1	0	1	0	0	0	0	0	0
-Anger	1	0	0	1	0	0	0	0	0
-Assassins	1	0	0	1	0	0	0	0	0
-Blind	1	1	0	1	1	1	1	1	1
-Catch	1	0	0	1	1	1	1	1	1
-Envy	1	0	0	1	0	0	0	0	0
-Ghost	1	0	0	1	0	0	0	0	0
-IWHBYD	1	0	0	1	1	1	1	1	1
-Sputnik	1	0	0	1	0	0	0	0	0
-That's Just… Wrong	1	0	0	1	0	0	0	0	0
-Thunderstorm	1	0	0	1	1	1	1	1	1
-Tough Luck	1	0	0	0	1	1	1	1	1
-Cowbell	0	1	0	0	1	1	1	1	1
-Tilt	0	0	0	0	1	1	1	1	1
+ï»¿Name,Multiplier,Secondary,Halo 1,Halo 2,Halo 3,Halo 3 ODST,Reach,Halo 4,Halo 5
+Iron,2.5,1,1,1,1,1,1,1,1
+Mythic,1.6,1,1,1,1,1,1,1,1
+Boom,0.95,1,1,0,0,0,0,0,0
+Foreign,1.5,1,1,0,0,0,0,0,0
+Famine,1.2,1,1,1,1,1,1,1,1
+Bandanna,0.5,1,1,0,0,0,0,0,0
+Fog/Cloud,1.1,1,1,0,1,0,1,1,1
+Malfunction,1.1,1,1,0,0,0,0,0,0
+Recession,1.4,1,1,0,0,0,0,0,0
+Black Eye,1.8,1,1,1,1,1,1,1,1
+Eye Patch,1.2,0,1,0,0,0,0,0,0
+Pinata,0.95,0,1,0,0,0,0,0,0
+Grunt Birthday Party,0.95,1,1,1,1,1,1,1,1
+Grunt Funeral,0.75,0,1,0,0,0,0,0,0
+Anger,1.3,0,0,1,0,0,0,0,0
+Assassins,1.4,0,0,1,0,0,0,0,0
+Blind,2.5,1,0,1,1,1,1,1,1
+Catch,1.2,0,0,1,1,1,1,1,1
+Envy,0.8,0,0,1,0,0,0,0,0
+Ghost,1.2,0,0,1,0,0,0,0,0
+IWHBYD,0.95,0,0,1,1,1,1,1,1
+Sputnik,0.95,0,0,1,0,0,0,0,0
+Whuppopotamus,1.1,0,0,1,0,0,0,0,0
+Thunderstorm,1.3,0,0,1,1,1,1,1,1
+Tough Luck,1.2,0,0,0,1,1,1,1,1
+Cowbell,0.95,1,0,0,1,1,1,1,1
+Tilt,1.1,0,0,0,1,1,1,1,1
